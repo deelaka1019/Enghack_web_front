@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import Signup from './Signup/Signup';
 import Login from './Login/Login';
 import UserContext from "./Context/userContext";
 import Axios from 'axios';
@@ -44,7 +43,6 @@ function App() {
       <UserContext.Provider value={{ userData, setUserData}}>
           <Switch>
             <Route exact path="/" component={Login} />
-            <Route path="/register" exact component={Signup} />
             <Route path="/admindash" component={Admindash} />
           </Switch>
           </UserContext.Provider>
