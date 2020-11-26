@@ -98,8 +98,12 @@ const logout = () =>{
               data-parent="#accordionSidebar"
             >
               <div className="collapse-inner rounded submenu-bg">
-                <Link className="collapse-item" to="/admindash/podcasts">
-                  Podcasts
+                <Link className="collapse-item" to="/admindash/addpodcast">
+                  Add Podcasts
+                </Link>
+
+                <Link className="collapse-item" to="/admindash/viewpodcast">
+                   View Podcasts
                 </Link>
 
 
@@ -127,7 +131,7 @@ const logout = () =>{
             >
               <div className="collapse-inner rounded submenu-bg">
             
-                <Link className="collapse-item" to="/admindash/grammer">
+                <Link className="collapse-item" to="/admindash/grammermcq">
                   Grammer MCQ
                 </Link>
 

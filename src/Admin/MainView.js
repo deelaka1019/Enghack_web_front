@@ -8,7 +8,9 @@ import AdminDetails from './AdminComponents/AdminDetails';
 import StudentSearch from './Student/StudentSearch';
 import Addreading from './Reading/AddReadings';
 import ViewReading from './Reading/ViewReadings';
-
+import Addpodcast from './Listening/Addpodcast';
+import ViewPods from './Listening/Viewpodcast';
+import Grammermcq from './Grammer/Grammer';
 const Admindash=() =>{
   
 const {setUserData} = useContext(UserContext);
@@ -100,6 +102,9 @@ return(
       
       
      {/* routes */}
+     <Route path="/admindash/grammermcq" component={Grammermcq}/>
+     <Route path="/admindash/viewpodcast" component={ViewPods}/>
+     <Route path="/admindash/addpodcast" component={Addpodcast}/>
      <Route path="/admindash/viewreadings" component={ViewReading}/>
      <Route path="/admindash/addreadings" component={Addreading}/>
      <Route path="/admindash/studentdata" component={StudentSearch}/>
